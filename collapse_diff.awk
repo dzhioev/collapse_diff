@@ -66,8 +66,8 @@ function on_group_end(print_from_begin_) {
 }
 
 END {
-  if (g_group_type)
-    on_group_end()
   if (g_error)
     exit g_error
+  if (g_group_type)
+    on_group_end()
 }
