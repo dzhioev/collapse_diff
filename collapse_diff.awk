@@ -7,14 +7,6 @@ function assert(condition, message) {
   exit (g_error = 1)
 }
 
-function min(a, b) {
-  return a < b ? a : b
-}
-
-function max(a, b) {
-  return a > b ? a : b
-}
-
 BEGIN {
   MAX_GROUP_SIZE = (ARGC > 1) ? ARGV[1] : 4
   CONTEXT_SIZE = (ARGC > 2) ? ARGV[2] : 2
